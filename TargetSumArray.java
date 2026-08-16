@@ -1,0 +1,30 @@
+//Find Two Numbers with Target Sum
+
+package com.Arraypractice;
+
+public class TargetSumArray {
+	public static void main(String rags[]) {
+		
+		int arr[]= {2, 7, 11, 15};
+		 int target= 9;
+		 
+		 for (int i = 0; i < arr.length; i++) {
+			 
+
+			    for (int j = i + 1; j < arr.length; j++) {
+			    	
+
+			        if (arr[i] + arr[j] == target) {
+			        	
+			            System.out.println(arr[i] + " " + arr[j]);
+			            
+			        }
+			        
+			    }
+			    
+			}
+
+		
+	}
+
+}
