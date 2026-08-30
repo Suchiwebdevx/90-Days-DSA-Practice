@@ -1,28 +1,28 @@
-//Reverse an Array
+//Array reverse question
 
-package com.Arraypractice;
+package com.DSA;
 
 public class ReverseArray {
+	
+	public static void main(String[] args) {
 
-    public static void main(String[] args) {
+int[] arr = {10, 20, 30, 40, 50};
 
-        int[] arr = {1, 2, 3, 4, 5};
+int start = 0;
+int end = arr.length - 1;
 
-        int start = 0;
-        int end = arr.length - 1;
+while (start < end) {
 
-        while (start < end) {
+    int temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
 
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+    start++;
+    end--;
+}
 
-            start++;
-            end--;
-        }
-
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-    }
+for (int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i] + " ");
+}
+}
 }
