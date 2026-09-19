@@ -1,26 +1,27 @@
 package OOps;
 
-class Product {
+public class Product {
 
-    void buy(int quantity) {
-        System.out.println("Buying " + quantity + " products");
+    String name;
+    double price;
+    int quantity;
+
+    void calculateTotal() {
+
+        double total = price * quantity;
+
+        System.out.println("Product: " + name);
+        System.out.println("Total Price: " + total);
     }
 
-    void buy(int quantity, String coupon) {
-        System.out.println("Buying with coupon");
-    }
-}
-class Payment {
+    public static void main(String[] args) {
 
-    void pay() {
-        System.out.println("Making payment");
-    }
-}
+        Product p = new Product();
 
-class UPI extends Payment {
+        p.name = "Laptop";
+        p.price = 50000;
+        p.quantity = 2;
 
-    @Override
-    void pay() {
-        System.out.println("Payment through UPI");
+        p.calculateTotal();
     }
 }
