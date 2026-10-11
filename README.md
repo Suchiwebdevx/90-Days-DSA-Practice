@@ -58,7 +58,7 @@ Data Structures and Algorithms
 
 📅 90-Day Challenge
 
-Phase
+phase
 
 Days
 
