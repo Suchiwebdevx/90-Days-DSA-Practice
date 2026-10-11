@@ -100,17 +100,6 @@ Days 76–90
 
 Problem Solving & Revision
 
-📂 Repository Structure
-
-90-Days-Java-Practice/
-│
-├── Day01/
-├── Day02/
-├── Day03/
-├── ...
-├── Day90/
-└── README.md
-
 💻 Daily Practice
 
 Each day contains Java programs and practice problems related to the topics I am learning.
