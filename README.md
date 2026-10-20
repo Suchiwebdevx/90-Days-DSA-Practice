@@ -16,7 +16,7 @@ Solve coding problems consistently
 
 Build confidence in writing clean Java code
 
-🛠️ Technologies Used
+🛠️ Technologies used
 
 Java
 
