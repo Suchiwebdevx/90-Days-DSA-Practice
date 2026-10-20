@@ -6,7 +6,7 @@ Welcome to my 90 Days of Java Practice repository! This repository documents my 
 
 Strengthen Java fundamentals
 
-Practice Object-Oriented Programming (OOp)
+Practice Object-Oriented Programming (OOP)
 
 Improve logical thinking and problem-solving
 
