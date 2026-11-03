@@ -1,0 +1,32 @@
+
+class Solution {
+    public int numOfSubarrays(int[] arr, int k, int threshold) {
+
+        int sum = 0;
+        int count = 0;
+
+        // First window
+        for (int i = 0; i < k; i++) {
+            sum += arr[i];
+        }
+        
+        //after calculating each window check avg matches thresold
+        if (sum >= threshold * k) {
+            count++;
+        }
+
+        // Sliding window
+        for (int right = k; right < arr.length; right++) {
+
+            sum = sum + arr[right] - arr[right - k];
+
+
+         //after calculating each window check avg matches thresold
+            if (sum >= threshold * k) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
